@@ -36,7 +36,7 @@ void  _b_int_ (void * _vector_, int _i,int _k){
         ((int*)_vector_)[_i+1] = temp;
 
     }
-    cout<<"\n1. Arreglo : ";
+    cout<<"\n Arreglo : ";
     for(int i=0;i<_k;++i) {
         cout << " " << ((int*)_vector_)[i];
     }
@@ -55,7 +55,7 @@ void  _b_float_ (void * _vector_, int _i,int _k){
         ((float*)_vector_)[_i+1] = temp;
 
     }
-    cout<<"\n2. Arreglo : ";
+    cout<<"\n Arreglo : ";
     for(int i=0;i<5;++i) {
         cout << " " << ((float*)_vector_)[i];
     }
@@ -73,7 +73,7 @@ void  _b_double_ (void * _vector_, int _i,int _k){
         ((double*)_vector_)[_i+1] = temp;
 
     }
-    cout<<"\n3. Arreglo : ";
+    cout<<"\n Arreglo : ";
     for(int i=0;i<_k;++i) {
         cout << " " << ((double *)_vector_)[i];
     }
@@ -93,7 +93,7 @@ void  _b_char_ (void * _vector_, int _i,int _k){
         ((char*)_vector_)[_i+1] = temp;
 
     }
-    cout<<"\n4. Arreglo : ";
+    cout<<"\n Arreglo : ";
     for(int i=0;i<_k;++i) {
         cout << " " << ((char*)_vector_)[i];
     }
@@ -112,6 +112,7 @@ int main(){
     double _array_3 [5] = {3.0,8.0,2.0,4.0,15.0};
     char _array_4 [6] = {'k','a','r','l','o','s'};
 
+    //Se muesta como se ordena poco a poco
     cout<<"\n\n1. Paso a paso: ";
     _bubblesort_(_array_1,_b_int_,i_1);
     cout<<"\n\n2. Paso a paso: ";
